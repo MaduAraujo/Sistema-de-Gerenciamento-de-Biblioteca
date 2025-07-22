@@ -1,15 +1,12 @@
 # Lista de livros (título, autor, codigo)
-
 livros = []
 
 # Função para registrar um novo livro no sistema
-
 def registrar_livros(titulo, autor, codigo):
   livros.append({"Titulo": titulo, "Autor": autor, "Código": codigo})
   print(f"Livro '{titulo}' registrado com sucesso!")
 
 # Função para emprestar um livro
-
 def emprestar_livros(livro):
 
     for livro in livros:
@@ -19,7 +16,6 @@ def emprestar_livros(livro):
     print("Livro não encontrado ou já emprestado.")
 
 #Função para devolver um livro
-
 def devolver_livros(livro):
 
     for livro in livros:
@@ -29,12 +25,10 @@ def devolver_livros(livro):
     print("Livro Recebido ou Não consta no acervo")
 
 # Função para consultar o acervo
-
 def consultar_acervo():
     return livros
     
 # Menu Principal
-
 while True:
     print("\nOpções:")
     print("1. Registrar Livro")
@@ -65,5 +59,3 @@ while True:
         break
     else:
       print("Opção inválida.")
-    
-    
