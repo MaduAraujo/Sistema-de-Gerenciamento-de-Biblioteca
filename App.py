@@ -71,7 +71,7 @@ if opcao == "Registrar Livro":
             if titulo and autor and codigo:
                 registrar_livros(titulo, autor, codigo)
             else:
-                st.error("Por favor, preencha todos os campos para registrar o livro.")
+                st.error("Preencha todos os campos para registrar o livro.")
 
 elif opcao == "Emprestar Livro":
     st.header("📤 Emprestar Livro")
@@ -82,7 +82,7 @@ elif opcao == "Emprestar Livro":
             if titulo_emprestar:
                 emprestar_livros(titulo_emprestar)
             else:
-                st.error("Por favor, digite o título do livro para emprestar.")
+                st.error("Digite o título do livro para emprestar.")
 
 elif opcao == "Devolver Livro":
     st.header("📥 Devolver Livro")
@@ -93,7 +93,7 @@ elif opcao == "Devolver Livro":
             if titulo_devolver:
                 devolver_livros(titulo_devolver)
             else:
-                st.error("Por favor, digite o título do livro para devolver.")
+                st.error("Digite o título do livro para devolver.")
 
 elif opcao == "Consultar Acervo":
     st.header("📚 Acervo de Livros")
